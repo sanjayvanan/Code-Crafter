@@ -1,0 +1,33 @@
+Sure! Here are some important array-related problems that you can practice to enhance your problem-solving skills and prepare for software engineering interviews:
+
+1. Two Sum: Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+2. Maximum Subarray: Find the contiguous subarray (containing at least one number) that has the largest sum and return its sum.
+
+3. Product of Array Except Self: Given an array `nums`, return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
+
+4. Rotate Array: Rotate an array to the right by `k` steps, where `k` is non-negative.
+
+5. Contains Duplicate: Given an array of integers, find if the array contains any duplicates.
+
+6. Missing Number: Given an array containing `n` distinct numbers taken from `0, 1, 2, ..., n`, find the one that is missing from the array.
+
+7. Merge Intervals: Given a collection of intervals, merge overlapping intervals.
+
+8. Move Zeroes: Given an array `nums`, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+9. Pascal's Triangle: Generate the first `numRows` of Pascal's triangle.
+
+10. Valid Sudoku: Determine if a 9x9 Sudoku board is valid.
+
+11. Trapping Rain Water: Given `n` non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+
+12. Best Time to Buy and Sell Stock: Given an array `prices` where `prices[i]` is the price of a given stock on day `i`, find the maximum profit that can be achieved by buying and selling one share of the stock.
+
+13. Next Permutation: Implement the next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
+
+14. Container With Most Water: Given `n` non-negative integers `a1, a2, ..., an`, where each represents a point at a coordinate `(i, ai)`, `n` vertical lines are drawn. Find two lines, which, together with the x-axis, forms a container, such that the container contains the most water.
+
+15. Set Matrix Zeroes: Given an `m x n` matrix, if an element is 0, set its entire row and column to 0.
+
+These are just some examples of important array-related problems that you may encounter in interviews and competitive programming. Solving these problems will not only help you become proficient in working with arrays but also improve your problem-solving skills and algorithmic thinking.
