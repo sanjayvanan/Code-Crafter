@@ -51,7 +51,6 @@ public class subarray{
                 index2 = i; 
             }
             
-
             if(index1 != -1  &&  index2 !=-1){
                 int current_distance = Math.abs(index1 - index2); 
                 if(current_distance<min_distance){
@@ -59,6 +58,7 @@ public class subarray{
             }
         }
         System.out.println(min_distance);
+        sc.close();
 
     }
 
