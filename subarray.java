@@ -50,6 +50,7 @@ public class subarray{
             if(str[i].equals(word2)){
                 index2 = i; 
             }
+            
 
             if(index1 != -1  &&  index2 !=-1){
                 int current_distance = Math.abs(index1 - index2); 
