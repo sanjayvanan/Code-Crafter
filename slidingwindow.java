@@ -10,6 +10,7 @@ public class slidingwindow {
             cSum=cSum-arr[i-k]+arr[i];
             mSum=Math.max(mSum,cSum);
            
+            
         }
         int fSum=arr[0]+arr[1]+arr[2];
         if(fSum>mSum){
