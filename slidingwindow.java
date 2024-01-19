@@ -9,8 +9,7 @@ public class slidingwindow {
         for(int i=k;i<arr.length;i++){
             cSum=cSum-arr[i-k]+arr[i];
             mSum=Math.max(mSum,cSum);
-           
-            
+
         }
         int fSum=arr[0]+arr[1]+arr[2];
         if(fSum>mSum){
