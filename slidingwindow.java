@@ -13,7 +13,8 @@ public class slidingwindow {
         }
         int fSum=arr[0]+arr[1]+arr[2];
         if(fSum>mSum){
-            System.out.println(fSum);
+            
+            System.out.println( fSum );
         }
         else{
             System.out.println(mSum);
