@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Year</span>
+                            <input type="text" class="form-control" id="year" oninput="generatePhotos()"
+                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                            <span class="input-group-text" id="inputGroup-sizing-default">Dept</span>
+                            <input type="text" class="form-control" id="dept" oninput="generatePhotos()"
+                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div id="photo-container" class="d-flex flex-wrap justify-content-start"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        const generatePhotos = () => {
+            var year = document.getElementById("year").value;
+            var dept = document.getElementById("dept").value.toUpperCase();
+            var photoContainer = document.getElementById("photo-container");
+            photoContainer.innerHTML = ""; // Clear previous content
+
+            for (let i = 1; i <= 240; i++) {
+                var rollNo = ("000" + i).slice(-3); // Format roll number with leading zeros
+                var text = `https://results.kongu.edu/Photos/${year}${dept}${rollNo}.jpg`;
+
+                var card = document.createElement("div");
+                card.className = "card m-2";
+                card.style = "width: 18rem;";
+
+                var img = document.createElement("img");
+                img.className = "card-img-top";
+                img.src = text;
+                img.alt = "Enter valid roll no";
+
+                var cardBody = document.createElement("div");
+                cardBody.className = "card-body";
+
+                var rollNoText = document.createElement("p");
+                rollNoText.className = "card-text";
+                rollNoText.textContent = `Roll No: ${year}${dept}${rollNo}`;
+
+                cardBody.appendChild(rollNoText);
+                card.appendChild(img);
+                card.appendChild(cardBody);
+
+                photoContainer.appendChild(card);
+            }
+        }
+    </script>
+</body>
+
+</html>
