@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class slidingwindow {
     public static void main(String[] args){
         int [] arr={50,9,31,-4,21,7,8,9};
@@ -13,7 +13,7 @@ public class slidingwindow {
         }
         int fSum=arr[0]+arr[1]+arr[2];
         if(fSum>mSum){
-            
+
             System.out.println( fSum );
         }
         else{
