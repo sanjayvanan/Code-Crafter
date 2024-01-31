@@ -43,6 +43,7 @@ public class subarray{
         String word2 = sc.next();
         int index1 = -1;
         int index2 = -1;
+        
         for(int i=0;i<str.length;i++){
             if(str[i].equals(word1)){
                 index1 = i; 
