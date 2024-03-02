@@ -7,6 +7,7 @@ class main
         int regulartime=0 ;
         if(time >12){
             while(time>12){
+                
                 regulartime +=1;
                 --time;
             }
