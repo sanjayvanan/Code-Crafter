@@ -37,3 +37,4 @@ class longestsubstring {
         scanner.close();
     }
 }
+// new logic 
