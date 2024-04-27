@@ -42,4 +42,6 @@ public class secminandmax {
             System.out.println("The second smallest element is: " + secondMin);
         }
     }
+
 }
+
