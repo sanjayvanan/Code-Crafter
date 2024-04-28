@@ -9,6 +9,7 @@ public class peak {
                 }
             }
         }
+
         System.out.println(peakvalue);
     }
 }
