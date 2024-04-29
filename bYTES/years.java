@@ -10,8 +10,6 @@ public class years {
         }
         for (int num : integers) {
             System.out.println(num);
-
-
             
         }
     }
