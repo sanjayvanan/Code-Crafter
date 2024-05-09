@@ -15,6 +15,7 @@ public class merge_twoArrays {
         for(int i=0;i<arr2.length;i++){
             merge_twoArray[arr1.length+i] = arr2[i];
         }
+        
         System.out.println(Arrays.toString(merge_twoArray));
         
     }
