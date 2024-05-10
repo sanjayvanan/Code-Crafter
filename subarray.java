@@ -60,9 +60,6 @@ public class subarray{
         }
         System.out.println(min_distance);
         sc.close();
-
-
-        
     }
 
 }
