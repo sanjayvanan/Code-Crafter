@@ -18,7 +18,6 @@ public class slidingwindow {
         else{
             System.out.println(mSum);
         }
-        
     }
 }
 
