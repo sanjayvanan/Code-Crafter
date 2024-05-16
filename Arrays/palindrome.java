@@ -17,9 +17,6 @@ class palindrome{
             left++;
             right--;
         }
-        return true;
-
-
-     
+        return true;     
     }
 }
