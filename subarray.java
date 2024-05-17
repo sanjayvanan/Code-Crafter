@@ -1,5 +1,6 @@
 // import java.util.*;
 
+
 // public class subarray {
 //     public static void main(String[] args) {
 //         String strs[] = { "sci", "soc", "mat", "Geo", "sanjay", "sci", "new", "sanjay" };
