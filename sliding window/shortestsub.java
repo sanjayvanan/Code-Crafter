@@ -12,7 +12,6 @@ class shortestsub{
             tempmax=tempmax-arr[i-a]+arr[i];            
             finalmax=Math.max(tempmax,finalmax);
         }
-
         System.out.println("the maximun subarray is "+finalmax);
         s.close();
     }
