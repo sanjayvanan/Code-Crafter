@@ -10,15 +10,12 @@ public class array {
                     arr[i]=arr[j];
                     arr[j]= temp;
                 }
-
             }
 
          }
          System.out.println(Arrays.toString(arr));
 
         }
-       
-
     }
     
 
