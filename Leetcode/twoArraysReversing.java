@@ -20,5 +20,4 @@ class Solution {
      }
 }
 
-
 //1460 leetcode
