@@ -13,6 +13,5 @@ class main
             }
         }
         System.out.println("this is the regular time "+regulartime);
-        
     }
 }
