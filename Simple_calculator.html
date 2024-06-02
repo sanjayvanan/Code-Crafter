@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>calculator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="output-screen">
+             <button onclick="Clear()">Cl</button>
+             <button onclick="del()">DEL</button>
+             <button onclick="dispaly('%')">%</button>
+             <button onclick="dispaly('/')">/</button>
+             <button onclick="dispaly('7')">7</button>
+             <button onclick="dispaly('8')">8</button>
+             <button onclick="dispaly('9')">9</button>
+             <button onclick="dispaly('*')">*</button>
+             <button onclick="dispaly('4')">4</button>
+             <button onclick="dispaly('5')">5</button>
+             <button onclick="dispaly('6')">6</button>
+             <button onclick="dispaly('-')">-</button>
+             <button onclick="dispaly('1')">1</button>
+             <button onclick="dispaly('2')">2</button>
+             <button onclick="dispaly('3')">3</button>
+             <button onclick="dispaly('+')">+</button>
+             <button onclick="dispaly('.')">.</button>
+             <button onclick="dispaly('0')">0</button>
+             <button onclick="Calculate()" class="equal">=</button>
+             
+
+        </div>
+        <button onclick="exitApp()" class="exit">Exit</button>
+    </div>
+   
+    <div id="Exiting-App" style="display: none; text-align: center; font-size: 24px;">
+        <div>
+            <br>
+            <br>
+            <br>
+            Thank you for using the app
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+    
+
+    let outputscreen = document.getElementById("output-screen");
+
+function dispaly(num){
+    outputscreen.value += num;
+}
+function Calculate(){
+    try{
+        outputscreen.value = eval(outputscreen.value);
+    }
+    catch(err)
+    {
+        alert("Invalid")
+    }
+}
+function Clear(){
+    outputscreen.value = "";
+}
+function del(){
+    outputscreen.value = outputscreen.value.slice(0,-1);
+}
+
+function exitApp() {
+    document.querySelector('.container' ).style.display  = 'none';
+    document.getElementById( 'Exiting-App').style.display = 'block';
+    document.querySelector('.exit').style.display = 'none';
+}
+
+function closeCalculator(){
+document.getElementsByClassName("calculator")[0].style.display="none";
+}
+</script>
+
