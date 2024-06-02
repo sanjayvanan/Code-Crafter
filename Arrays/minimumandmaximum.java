@@ -9,10 +9,6 @@ public class minimumandmaximum {
          max = Math.max(max, arr[i]);
          min = Math.min(min,arr[i]);
     }
-
-
-
-
     System.out.println("Minimum is "+min+" arr max = "+ max); 
    }
      

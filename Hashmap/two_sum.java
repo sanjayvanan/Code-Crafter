@@ -18,6 +18,5 @@ class two_sum{
         }
         System.out.println(ans[0]+" And "+ ans[1]);
     }
-
 }
 

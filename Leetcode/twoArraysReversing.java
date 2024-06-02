@@ -16,9 +16,8 @@ class Solution {
         int[] target = {1,2,3,4};
         int [] arr = {2,4,1,3};
         canBeEqual(target,arr);
-        
+       
      }
 }
-
 
 //1460 leetcode

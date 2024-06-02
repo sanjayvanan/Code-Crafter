@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 class shortestsub{
     public static void main(String[] args){
         Scanner s =new Scanner(System.in);
@@ -12,7 +12,6 @@ class shortestsub{
             tempmax=tempmax-arr[i-a]+arr[i];            
             finalmax=Math.max(tempmax,finalmax);
         }
-
         System.out.println("the maximun subarray is "+finalmax);
         s.close();
     }
