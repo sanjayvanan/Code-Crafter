@@ -5,7 +5,7 @@ public class Main
         int[] arr = {2,9,31,-4,21,7};
         int k = 3;
         int ctot = 0;
-        int mtot = Integer.MIN_VALUE; // initialize mtot to lowest possible value
+        int mtot = Integer.MIN_VALUE; 
         for(int i=0; i<=arr.length-k; i++) {
             ctot = 0; // reset ctot to 0 for each subarray
             for(int j=i; j<i+k; j++) {
